@@ -1,24 +1,25 @@
 # BuilderPojoGenerator
-[中文说明](./README-CH.md)  
-a plugin for idea(android studio) to generate java code for builder mode
-## DOWNLOAD  
-search  "BuilderPojoGenerator" in plugin repositories
+[English](./READMEmd)  
+自动生成Builder模式源码
 
-## HOW TO USE  
-int the code of POJO , right click , selected "Builder Generator", change options and click 'OK'  
+## 下载 
+在插件中心界面搜索"BuilderPojoGenerator"
+
+## 使用说明 
+进入Pojo对象界面, 右击, 选择"Builder Generator", 调整选项后点击ok。  
 ![](./images/builder-generator1.png)
 
-the ui is :  
+界面如下:  
 ![](./images/builder-generator2.png)  
 
-## OPTIONS  
-force change field to final  
-generate overlay method (about overlay method can see in demo)  
-generate getter methods
+## 配置  
+force change field to final : 强制将字段变为final 
+generate overlay method (overlay方法可以在demo中查看到)  
+generate getter methods : 生成getter方法
 
 ## DEMO
 
-original source :   
+原始的Pojo源码 :   
 
 ```java
 public class Test {
@@ -29,7 +30,7 @@ public class Test {
    }
 ```  
 
-generated source :  
+生成的源码 :  
 
 ```java
 public class Test {

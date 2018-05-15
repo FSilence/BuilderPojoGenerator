@@ -1,0 +1,37 @@
+<idea-plugin version="1">
+  <id>com.wlh.builder.generator</id>
+  <name>BuilderPojoGenerator</name>
+  <version>1.0</version>
+  <vendor email="weiluhao110@163.com" url="https://github.com/FSilence/BuilderPojoGenerator">Weilh</vendor>
+
+  <description><![CDATA[
+     a plugin for idea(android studio) to generate java code for builder mode
+    ]]></description>
+
+  <change-notes><![CDATA[
+     1.create builder class for current selected POJO<br>
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action class="com.wlh.builder.generator.BuilderGeneratorAction" id="BuilderGenerator" text="BuilderGenerator">
+       <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
